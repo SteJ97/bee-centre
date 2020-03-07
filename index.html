@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Bee centre for children and parents" />
+		<link rel="shortcut icon" href="Images/icon.png" type="image/x-icon" />
+		<title>The Bee Centre</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="Shared/style.css" />
+		<link rel="stylesheet" href="Shared/animate.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<div id="nav-placeholder"></div>
+
+		<script>
+			$(function() {
+				$('#nav-placeholder').load('Navbar/index.html');
+			});
+		</script>
+		<!--end of Navigation bar-->
+
+		<main>
+			<section class="introduction">
+				<!-- Introduction text on left side of top border -->
+				<div class="introduction-text">
+					<h2>Bzzzzzz! Welcome to the Bee Centre!</h2>
+					<p>
+						We’re working hard to spread the good word about our honeymaking friends whilst giving our very
+						own colony the best bee lives!
+					</p>
+				</div>
+			</section>
+			<section class="container-row location">
+				<p class="location-text">
+					We are based in the <b>North-West</b> of England, but work throughout the UK by visiting schools,
+					delivering talks and even moving bees to a safe haven if they’ve set up home somewhere they
+					shouldn’t have!
+				</p>
+				<div class="location-img">
+					<img
+						class="location-img_marker animated shake delay-2s "
+						src="Images/location-marker.png"
+						alt="location-marker"
+					/>
+					<img
+						class="location-img_country"
+						src="Images/location.png"
+						alt="location-image"
+						title="Location Image"
+					/>
+				</div>
+			</section>
+			<section class="container-column">
+				<p class="width-70perc" data-aos="fade-right">
+					Our centre is open to the public <b>throughout the year!</b> So bring the family, see our bees up
+					close and learn a little about the creatures that do so much more than make us honey.
+				</p>
+			</section>
+			<section class="container-row">				
+				<div class="fear-img" data-aos="fade-right">
+					<img src="Images/bee-hexagon.png" alt="bee" title="Common carder bee" />
+				</div>
+
+				<p class="fear-text" data-aos="fade-down">
+					Have a <b>fear of bees?</b> Come down and we’ll aim to beat that fear and show you that the bee is a
+					friendly, hard-working wonder of the natural world.
+				</p>
+				<div class="fear-img-2" data-aos="fade-left">
+					<img src="Images/bee-hexagon-2.png" alt="bee" title="White-tailed bumblebee" />
+				</div>
+			</section>
+			<section class="container-column">
+				<div class="width-70perc services">
+					<b>Our other services include –</b>
+					<ul>
+						<li>
+							<b>Ethical bee control –</b> if bees have set up home in your house or garden please call
+							us. Our expert team will be happy to ethically relocate them. <br />
+						</li>
+						<li>
+							<b>Educational talks –</b> does your school or even work place want a talk on bees? We’ll
+							even bring some in!
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="container-row">
+				<p class="everyone">
+					There’s something for <b class="animated infinite pulse delay-1s">everyone</b>. Contact the Bee
+					Centre today.
+				</p>
+			</section>
+			<section class="container-column">
+				<div class="bees-info">
+					<h2>The Bees! <b>The Bees!</b> –</h2>
+					<p>
+						Bee keeping has dramatically declined in the UK and in the past one hundred years there has been
+						around a 75% decrease in the number of bee hives. There are an estimated 274,000 honey bee hives
+						in the UK; the majority of these hives are kept by approximately 44,000 amateur keepers. Around
+						200 bee keepers manage bees on a professional basis and are members of the Bee Farmers
+						Association; collectively they manage around 40,000 colonies. The remainder are small-scale
+						producers.
+					</p>
+				</div>
+			</section>
+			<footer>
+				<p>- By Stephen Johnson | 2020</p>
+			</footer>
+
+			<div class="mapouter">
+				<div class="gmap_canvas">
+					<iframe
+						width="600"
+						height="500"
+						id="gmap_canvas"
+						src="https://maps.google.com/maps?q=lancaster&t=&z=11&ie=UTF8&iwloc=&output=embed"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+					></iframe>
+				</div>
+			</div>
+		</main>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+	</body>
+</html>
