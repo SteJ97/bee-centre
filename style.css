@@ -74,19 +74,21 @@ b {
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: #333333 0px 2px 2px 2px;
+	margin: 10px 0px;
 }
 .location-img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 300px;
+	margin-bottom: 10px;
 }
 
 .location-img_marker {
 	width: 10%;
 	position: relative;
 	left: 147px;
-	bottom: 35px;	   
+	bottom: 35px;
 	animation-duration: 1s;
 }
 
@@ -101,26 +103,39 @@ b {
 	padding: 10px;
 }
 
-.fear-img,
-.fear-img-2 {	
-	transition: 0.5s;	
-	transform: rotate(0deg);
-	width: 300px;
+.hexagon {
+	width: 350px;
+	height: 290px;
+	background-color: red;
+	transform: rotate(120deg) !important;
+	overflow: hidden;
+	visibility: hidden;
+	margin: 10px;
 }
 
-.fear-img:hover {
-	transition: 0.5s;
-	transform: rotate(5deg);
-}
-
-.fear-img-2:hover {
-	transition: 0.5s;
-	transform: rotate(-5deg);
-}
-
-.fear-img img,
-.fear-img-2 img {
+.hexagon-inside {
 	width: 100%;
+	height: 100%;
+	background-color: green;
+	transform: rotate(-60deg);
+	overflow: hidden;
+}
+
+.hexagon-img {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-60deg);
+	visibility: visible;
+}
+
+.fear-img {
+	background-image: url(Images/common-carder-bee.jpg);
+	background-position: 70% 0%;
+}
+
+.fear-img-2 {
+	background-image: url(Images/white-tailed-bumblebee.jpg);
+	background-position: 15% 0%;
 }
 
 .fear-text {
@@ -131,6 +146,7 @@ b {
 	border-radius: 10px;
 	font-size: 2rem;
 	box-shadow: #333333 0px 2px 2px 2px;
+	margin-bottom: 10px;
 }
 
 .services ul {
@@ -185,7 +201,7 @@ b {
 }
 
 @media (max-width: 1330px) {
-	.fear-img-2 {
+	.fear-2 {
 		display: none;
 	}
 
@@ -195,9 +211,6 @@ b {
 }
 
 @media (max-width: 1085px) {
-	.fear-img {
-		width: 250px;
-	}
 }
 
 @media (max-width: 916px) {
