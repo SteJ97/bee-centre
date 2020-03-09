@@ -107,7 +107,7 @@ b {
 	width: 350px;
 	height: 290px;
 	background-color: red;
-	transform: rotate(120deg) !important;
+	transform: rotate(120deg);
 	overflow: hidden;
 	visibility: hidden;
 	margin: 10px;
