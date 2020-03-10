@@ -50,7 +50,7 @@ b {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	width: 45%;
+	max-width: 800px;
 	font-size: 1.5rem;
 	border-top: solid yellow 5px;
 	border-bottom: solid black 5px;
@@ -69,12 +69,12 @@ b {
 
 .location-text {
 	background-color: #161616;
-	width: 50%;
+	width: 900px;
 	color: white;
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: #333333 0px 2px 2px 2px;
-	margin: 10px 0px;
+	margin: 10px 10px;
 }
 .location-img {
 	display: flex;
@@ -99,8 +99,8 @@ b {
 .width-70perc {
 	font-size: 2rem;
 	text-align: center;
-	width: 70%;
-	padding: 10px;
+	width: 1200px;
+	margin: 10px;
 }
 
 .hexagon {
@@ -164,6 +164,7 @@ b {
 }
 
 .everyone {
+	text-align: center;
 	font-weight: bold;
 	font-size: 2.2rem;
 }
@@ -175,7 +176,7 @@ b {
 .bees-info {
 	font-size: 1.5rem;
 	text-align: center;
-	width: 60%;
+	max-width: 1100px;
 	padding: 10px;
 }
 
@@ -200,7 +201,7 @@ b {
 	display: block;
 }
 
-@media (max-width: 1330px) {
+@media (max-width: 1538px) {
 	.fear-2 {
 		display: none;
 	}
@@ -210,8 +211,15 @@ b {
 	}
 }
 
+
+
+
+
 @media (max-width: 1085px) {
 }
+
+
+
 
 @media (max-width: 916px) {
 	.fear-text {
@@ -219,8 +227,32 @@ b {
 	}
 }
 
+
+
+
+
+
 @media (max-width: 698px) {
+	html,
+	body {
+		font-size: 12px;
+	}
 	.location-img {
 		width: 50%;
+	}
+	.hexagon {
+		width: 300px;
+		height: 240px;
+	}
+	.services {
+		font-size: 1.6rem;
+		padding: 10px 0px;		
+	}
+	.services ul {
+		padding-left: 20px;	
+		margin: 0px;
+	}
+	.services li {
+		line-height: 25px;
 	}
 }
