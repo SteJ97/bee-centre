@@ -77,6 +77,7 @@ b {
 	margin: 10px 10px;
 }
 .location-img {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -86,9 +87,9 @@ b {
 
 .location-img_marker {
 	width: 10%;
-	position: relative;
-	left: 147px;
-	bottom: 35px;
+	position: absolute;
+	left: 43%;
+	bottom: 55%;
 	animation-duration: 1s;
 }
 
@@ -107,7 +108,7 @@ b {
 	width: 350px;
 	height: 290px;
 	background-color: red;
-	transform: rotate(120deg);
+	transform: rotate(120deg) !important;
 	overflow: hidden;
 	visibility: hidden;
 	margin: 10px;
@@ -211,26 +212,14 @@ b {
 	}
 }
 
-
-
-
-
 @media (max-width: 1085px) {
 }
-
-
-
 
 @media (max-width: 916px) {
 	.fear-text {
 		width: 90%;
 	}
 }
-
-
-
-
-
 
 @media (max-width: 698px) {
 	html,
@@ -246,10 +235,10 @@ b {
 	}
 	.services {
 		font-size: 1.6rem;
-		padding: 10px 0px;		
+		padding: 10px 0px;
 	}
 	.services ul {
-		padding-left: 20px;	
+		padding-left: 20px;
 		margin: 0px;
 	}
 	.services li {
