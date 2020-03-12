@@ -20,6 +20,10 @@ footer {
 	background-color: #868686;
 }
 
+::-webkit-scrollbar-thumb:hover {
+	background-color: #adadad;
+}
+
 
 
 
