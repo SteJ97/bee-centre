@@ -20,37 +20,7 @@ footer {
 	background-color: #868686;
 }
 
-@media (max-width: 698px) {
-	header {
-		height: 80px;
-	}
-	header a {
-		margin: 0;
-	}
-	header a:last-child {
-		margin-top: 5px;
-	}
-	header p {
-		display: none;
-	}
-	nav {
-		height: 90px;
-	}
-}
 
-@media (max-width: 1200px) {
-	.logo {
-		width: 180px;
-		top: 43px;
-		left: 10px;
-	}	
-	.nav-buttons {
-		visibility: hidden;		
-	}
-	.hamburger:hover .nav-buttons {
-		display: flex;
-	}
-}
 
 
 
