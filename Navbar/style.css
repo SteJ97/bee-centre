@@ -137,6 +137,13 @@ i {
 	text-align: center;
 }
 
+.mobile-nav div {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 20px;
+}
+
 .mobile-nav_buttons {
 	display: none;
 	position: absolute;
@@ -163,7 +170,7 @@ i {
 	width: 260px;
 	position: absolute;
 	top: 20px;
-	left: 60px;
+	left: 40px;
 }
 
 .logo-img {
@@ -211,21 +218,19 @@ i {
 	}
 	.mobile-nav {
 		display: block;
-	}	
+	}
 	.mobile-nav:hover .mobile-nav_buttons {
 		display: block;
-	}	
+	}
 	.desktop-nav_buttons {
 		display: none;
 	}
 	.logo {
+		width: 200px;
 		top: 30px;
-		left: 40px;
+		left: 20px;
 	}
 
-	.logo-img {
-		width: 75%;
-	}
 	.logo-text {
 		font-size: 12px;
 		top: 75px;
