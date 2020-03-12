@@ -211,7 +211,7 @@ i {
 	}
 	.mobile-nav {
 		display: block;
-	}
+	}	
 	.mobile-nav:hover .mobile-nav_buttons {
 		display: block;
 	}	
