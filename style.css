@@ -42,8 +42,9 @@ b {
 .introduction-bg {
 	background-image: url(Images/banner.jpg);
 	background-repeat: no-repeat;
-	background-position: left;
-	filter: blur(7px);
+	background-size: cover;
+	background-position: center;
+	filter: blur(7px) grayscale(20%);
 	width: 100%;
 	height: 100%;
 	position: relative;
