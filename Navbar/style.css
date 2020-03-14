@@ -25,7 +25,7 @@ header p {
 	display: flex;
 }
 
-nav {
+nav {	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
