@@ -1,19 +1,24 @@
 .container-row {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	background-color: yellow;
+	flex-wrap: wrap;
+	background-color: rgba(255, 230, 0, 0.7);
 	min-height: 430px;
+	padding: 10px;
 }
 
 .container-column {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	background-color: #161616;
 	min-height: 200px;
 	color: white;
 	font-size: 1.5rem;
+	box-shadow: inset 0 0 3px #000000;
+	padding: 10px;
 }
 
 b {
@@ -22,44 +27,51 @@ b {
 }
 
 h2,
+h3,
 p {
 	margin: 0;
 }
 
 .setup_info {
-	width: 70%;
 	font-size: 2rem;
 	text-align: center;
 }
 
 .services {
-	background-color: yellow;
-	min-height: 430px;
+	background-color: rgba(255, 230, 0, 0.7);
 }
 
 .services-list {
-	font-size: 2rem;
-	margin: 30px 0;
-	background-color: #161616;
-	width: 60%;
-	color: white;
+	font-size: 1.8rem;
+	color: #161616;
 	padding: 10px;
-	border-radius: 10px;
-	box-shadow: #333333 0px 2px 2px 2px;
+}
+
+.services-list h3 {
+	margin: 0px;
+	text-decoration: underline;
 }
 
 .services-list ul {
 	margin: 0;
+	padding: 20px;
 }
 
 .gallery {
-	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 0;
 	background-color: #161616;
+}
+
+/* This style is temporary */
+.gallery-img {
+	width: 1050px;
 }
 
 .join-us {
 	text-align: center;
-	background-color: yellow;	
+	background-color: rgba(255, 230, 0, 0.7);
 }
 
 .join-us h2 {
@@ -68,11 +80,18 @@ p {
 
 .join-us-text {
 	font-size: 1.8rem;
-	margin: 30px 0;
-	background-color: #161616;
-	width: 60%;
-	color: white;
+	margin: 0;
+	color: #161616;
 	padding: 10px;
-	border-radius: 10px;
-	box-shadow: #333333 0px 2px 2px 2px;
+}
+
+.max-width {
+	width: 1150px;
+}
+
+@media (max-width: 698px) {
+	html,
+	body {
+		font-size: 12px;
+	}
 }
