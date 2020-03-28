@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	font-size: 16px !important;
 }
 
 header {
@@ -8,10 +9,27 @@ header {
 	align-items: flex-end;
 	flex-direction: column;
 	height: 80px;
+	background-color: white;
 }
 
-.contact-phone,
-.contact-email {
+p {
+	margin: 0;
+}
+
+.contact-phone_mobile,
+.contact-email_mobile {
+	display: none;
+}
+
+.contact-phone_mobile img,
+.contact-email_mobile img {
+	width: 50px;
+	height: 50px;
+	margin: 0px 5px;
+}
+
+.contact-phone_desktop,
+.contact-email_desktop {
 	display: flex;
 	align-items: center;
 	margin-right: 10px;
@@ -33,6 +51,21 @@ nav {
 	position: absolute;
 	width: 230px;
 	top: 10px;
+	transition: 0.2s;
+}
+
+.logo:hover {
+	transition: 0.2s;
+	transform: scale(1.02);
+}
+
+.logo-text {
+	width: 200px;
+	top: 100px;
+	left: 120px;
+	position: absolute;
+	transform: rotate(-14deg) skew(-8deg);
+	color: black;
 }
 
 .logo img {
@@ -74,7 +107,6 @@ nav {
 }
 
 .dropdown-button {
-	cursor: pointer;
 	font-weight: bold;
 	color: #000000;
 	font-size: 2rem;
@@ -146,13 +178,17 @@ i {
 	margin: 6px 0;
 }
 
-.mobile-nav {
+.mobile-nav {	
 	display: none;
 }
 
+.mobile-nav_button {
+	margin-right: 17px;
+}
+
 .mobile-nav_button:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 
 .mobile-nav_button:hover .mobile-nav_content {
@@ -164,8 +200,8 @@ i {
 	position: absolute;
 	top: 180px;
 	right: 0px;
-	text-align: end;
-	font-size: 1.5rem;
+	text-align: start;
+	font-size: 2rem;
 	padding: 20px;
 	background-color: #ffcc00;
 	border-radius: 0 0 0 50px;
@@ -183,20 +219,33 @@ i {
 .mobile-nav_content a {
 	list-style: none;
 	text-decoration: none;
-    color: black;
-    padding: 5px;
+	color: black;
+	padding: 5px;
 }
 
 .mobile-nav_content a:active {
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 }
 
 .mobile-burger_button {
 	margin: 20px;
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1150px) {
+	header {
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.contact-phone_mobile,
+	.contact-email_mobile {
+		display: block;
+	}
+	.contact-phone_desktop,
+	.contact-email_desktop {
+		display: none;
+	}
 	.nav-content .mobile-nav {
 		height: 100px;
 		display: flex;
@@ -206,14 +255,28 @@ i {
 	.logo {
 		width: 180px;
 		top: 25px;
-    }
-    .logo img {
-        left: 20px;
-    }
+	}
+	.logo-text {
+		font-size: 80%;
+		top: 80px;
+		left: 75px;
+	}
+	.logo img {
+		left: 20px;
+	}
 	.desktop-nav_buttons {
 		display: none;
 	}
 	.mobile-nav {
 		display: block;
+	}
+}
+
+@media (max-width: 350px) {
+	.logo-text {
+		left: 55px;
+	}
+	.logo img {
+		left: 0px;
 	}
 }
