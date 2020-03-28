@@ -10,34 +10,55 @@
 	<body>
 		<div class="desktop-nav">
 			<header>
-				<div class="contact-phone">Phone: <a href="tel:+013048831122">013048831122</a></div>
+				<div class="contact-phone">
+					<div class="contact-phone_mobile">
+						<a href="tel:+013048831122"
+							><img src="../Images/phone.png" alt="phone-img" title="Give us a Call!"
+						/></a>
+					</div>
+					<div class="contact-phone_desktop">
+						<p>Phone:</p>
+						<a href="tel:+013048831122">013048831122</a>
+					</div>
+				</div>
 				<div class="contact-email">
-					E-Mail: <a href="mailto:info@beecentreexample.co.uk">info@beecentreexample.co.uk</a>
+					<div class="contact-email_mobile">
+						<a href="mailto:info@beecentreexample.co.uk"
+							><img src="../Images/email.png" alt="email-img" title="Send us an E-Mail!"
+						/></a>
+					</div>
+					<div class="contact-email_desktop">
+						<p>E-Mail:</p>
+						<a href="mailto:info@beecentreexample.co.uk">info@beecentreexample.co.uk</a>
+					</div>
 				</div>
 			</header>
 			<nav>
 				<div class="nav-content">
 					<div class="logo">
-						<img src="../Images/logo_resize.png" alt="" />
+						<a href=""
+							><p class="logo-text">A Buzzing Place To Be!</p>
+							<img src="../Images/logo_resize.png" alt="logo" title="The Bee Centre"
+						/></a>
 					</div>
 					<div class="desktop-nav_buttons">
 						<ul>
-							<li><a href="">Home</a></li>
+							<li><a class="desktop-nav-buttons__button" href="../index.html">Home</a></li>
 
 							<!-- Dropdown menu on the about us nav button -->
 							<div class="dropdown">
 								<li>
-									<a class="dropdown-button">About Us<i class="down"></i></a>
+									<a href="../About Us Page/index.html" class="dropdown-button">About Us<i class="down"></i></a>
 								</li>
 								<!-- Dropdown menu content buttons -->
 								<div class="dropdown-content">
-									<a href="About Us Page/index.html">About Us</a>
-									<a href="About Us Page/Meet the Team/index.html">Meet the Team</a>
+									<a href="../About Us Page/index.html">About Us</a>
+									<a href="../Meet the Team/index.html">Meet the Team</a>
 								</div>
 							</div>
 
-							<li><a href="">Events</a></li>
-							<li><a href="">Contact</a></li>
+							<li><a class="desktop-nav-buttons__button" href="">Events</a></li>
+							<li><a class="desktop-nav-buttons__button" href="">Contact</a></li>
 						</ul>
 					</div>
 					<div class="mobile-nav">
@@ -49,9 +70,9 @@
 							</div>
 							<div class="mobile-nav_content">
 								<ul>
-									<li><a href="">Home</a></li>
-									<li><a href="">About Us</a></li>
-									<li><a href="">Meet the Team</a></li>
+									<li><a href="../index.html">Home</a></li>
+									<li><a href="../About Us Page/index.html">About Us</a></li>
+									<li><a href="../Meet the Team/index.html">Meet the Team</a></li>
 									<li><a href="">Events</a></li>
 									<li><a href="">Contact Us</a></li>
 								</ul>
