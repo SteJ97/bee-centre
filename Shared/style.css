@@ -1,7 +1,7 @@
-body {	
+body {
 	margin: 0;
-	background-color: #f3f3f3;
-	font-family: Arial, Helvetica, sans-serif;		
+	background: rgba(255, 230, 0, 0.7) !important;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -9,6 +9,10 @@ footer {
 	text-align: center;
 	background-color: #ffcc00;
 	border-top: solid black 1px;
+}
+
+footer p {
+	margin: 0;
 }
 
 ::-webkit-scrollbar {
@@ -22,8 +26,3 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #adadad;
 }
-
-
-
-
-
