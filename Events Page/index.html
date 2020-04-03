@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../Shared/style.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="../Navbar/style.css" />
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<!-- Navigation bar placed inside divider below -->
+		<div id="nav-placeholder"></div>
+
+		<script>
+			// Loads navbar html code into navbar placeholder div
+			$(function() {
+				$('#nav-placeholder').load('../Navbar/index.html');
+			});
+		</script>
+		<!--end of Navigation bar-->
+		<main>
+			<header class="container-column">
+				<div class="page-title">
+					<p>Events</p>
+				</div>
+			</header>
+			<section class="container-row">
+				<div class="education event">
+					<h3>
+						<img src="../Images/education.png" alt="Education" />
+						Education Events
+					</h3>
+					<ul>
+						<li>
+							The Bee Centre can come into your place of education or business to give an interactive talk
+							with our special travel hives.
+						</li>
+						<li>
+							Get up close and personal to our bees, learn all about them and the huge impact that
+							pollinator decline is having on the world.
+						</li>
+						<li>Price dependent on distance. Contact us.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="container-row">
+				<div class="talks event">
+					<h3>
+						<img src="../Images/talks.png" alt="talks" />
+						Daily Talks at the Centre
+					</h3>
+					<ul>
+						<li>
+							Come into the centre where host multiple talks per day about our bees, UK bees and bees
+							around the world!
+						</li>
+						<li>Daily talks at 10am, midday and 3pm.</li>
+						<li>
+							Free entry with Bee Centre ticket.
+						</li>
+						<li>
+							Did you know that bees have a complex communication system? Find these things out and many
+							more at the Bee Centre!
+						</li>
+						<li>
+							Do you know how many types of bees they are and how they differ? Find these things out and
+							many more at the Bee Centre!
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="container-row">
+				<div class="seasonal event">
+					<h3>
+						<img src="../Images/calendar.png" alt="calendar" />
+						Seasonal Events
+					</h3>
+					<ul>
+						<li>We have all kinds of events at the Bee Centre throughout the year!</li>
+						<li>Keep up to date.</li>
+						<li>Contact us today to sign up to our newsletter.</li>
+					</ul>
+				</div>
+			</section>
+        </main>
+        <!-- By Author -->
+		<footer>
+			<p>- By Stephen Johnson | 2020</p>
+		</footer>
+		<!-- End of footer -->
+	</body>
+</html>
