@@ -80,6 +80,10 @@ nav {
 	height: 100px;
 }
 
+.desktop-nav_buttons .desktop-nav-buttons__button:hover {
+	border-bottom: solid red 5px;
+}
+
 .desktop-nav_buttons ul {
 	margin: 0;
 	padding: 0;
@@ -122,9 +126,10 @@ nav {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 160px;
+	min-width: 178px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 1;
+	text-align: center;
 }
 
 .dropdown-content a {
@@ -140,8 +145,7 @@ nav {
 
 .dropdown-content a:hover {
 	color: white;
-	background-color: black;
-	border: solid yellow 1px;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .dropdown:hover .dropdown-content {
