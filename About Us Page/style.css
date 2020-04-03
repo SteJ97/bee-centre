@@ -1,3 +1,8 @@
+.about,
+.about-1 {
+	background-color: rgba(0, 0, 0, 0.2);	
+}
+
 .container-row {
 	display: flex;
 	justify-content: center;
