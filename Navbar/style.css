@@ -80,10 +80,6 @@ nav {
 	height: 100px;
 }
 
-.desktop-nav_buttons .desktop-nav-buttons__button:hover {
-	border-bottom: solid red 5px;
-}
-
 .desktop-nav_buttons ul {
 	margin: 0;
 	padding: 0;
@@ -94,18 +90,27 @@ nav {
 	display: flex;
 }
 
-.desktop-nav_buttons li a {
-	color: black;
-	text-decoration: none;
+.desktop-nav_buttons li {
 	font-size: 2rem;
-	box-sizing: border-box;
-	margin: 5px;
-	padding-right: 10px;
 	font-weight: bold;
 	border-right: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
-.desktop-nav_buttons li:last-child a {
+.desktop-nav_buttons li a {
+	padding: 5px 10px;	
+	color: black;
+	text-decoration: none;
+}
+
+.desktop-nav-buttons__button:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.desktop-nav-buttons__button:focus {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.desktop-nav_buttons li:last-child {
 	border: none;
 }
 
