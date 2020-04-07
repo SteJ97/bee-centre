@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Bee centre about us" />
+		<link rel="shortcut icon" href="../Images/icon.png" type="image/x-icon" />
+		<title>The Bee Centre - About Us</title>
+		<link rel="stylesheet" href="../Navbar/style.css" />
+		<link rel="stylesheet" href="../Shared/animate.css" />
+		<link href="../node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	</head>
+	<body>
+		<!--Navigation bar-->
+		<!-- Navigation bar placed inside divider below -->
+		<div id="nav-placeholder"></div>
+
+		<script>
+			// Loads navbar html code into navbar placeholder div
+			$(function() {
+				$('#nav-placeholder').load('../Navbar/index.html');
+			});
+		</script>
+		<!--end of Navigation bar-->
+		<main>
+			<header class="container-column">
+				<div class="page-title">
+					<p>Contact Us</p>
+				</div>
+			</header>
+			<section class="container-row">
+				<div class="contact2">
+					<div class="contact-form">
+						<form action="action_page.php">
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+
+							<label for="lname">Last Name</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
+
+							<label for="subject">Subject</label>
+							<textarea
+								id="subject"
+								name="subject"
+								placeholder="Write something.."
+								style="height:200px"
+							></textarea>
+
+							<input type="submit" value="Submit" required />
+						</form>
+					</div>
+					<div class="contact-details">
+						<div class="contact-details__business">
+							<h2>Contact the business</h2>
+							<p>Contact Number:</p>
+							<a href="tel:+013048831122">01304 883 1122</a>
+							<p>Email:</p>
+							<a
+								href="mailto:info@beecentreexample.co.uk
+                    "
+								>info@beecentreexample.co.uk
+							</a>
+						</div>
+						<div class="contact-details__team">
+							<h2>
+								Contact a team member
+							</h2>
+							<p>Contact Number:</p>
+							<a href="tel:+0138744855">0138 744855</a>
+							<p>Mobile:</p>
+							<a href="tel:+07222333945">07222333945</a>
+							<p>E-mail:</p>
+							<a href="mailto:eobrien@example.com">eobrien@example.com</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="container-row">
+				<div class="address">
+					<div class="mapouter">
+						<div class="gmap_canvas">
+							<iframe
+								width="400"
+								height="400"
+								id="gmap_canvas"
+								src="https://maps.google.com/maps?q=lancaster&t=&z=13&ie=UTF8&iwloc=&output=embed"
+								frameborder="0"
+								scrolling="no"
+								marginheight="0"
+								marginwidth="0"
+							></iframe
+							><a href="https://www.whatismyip-address.com">what is my ip</a>
+						</div>
+					</div>
+					<div class="address-details">
+						<div class="address-details__opentimes">
+							<h2>Opening times:</h2>
+							<p>Monday – Friday (8am – 7pm)<br />Saturday (8am – 5pm)<br />Sunday (12pm - 5pm)</p>
+						</div>
+						<div class="address-details__address">
+							<h2>Address</h2>
+							<p>
+								The Bee Centre<br />
+								Merlin Lane<br />
+								Lancaster<br />
+								LC33 5NS
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
