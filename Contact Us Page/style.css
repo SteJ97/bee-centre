@@ -1,0 +1,114 @@
+.container-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: 430px;	
+}
+
+.container-column {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: #161616;
+	color: white;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+
+.page-title {
+	width: 1150px;
+	display: flex;
+	justify-content: start;
+}
+
+.page-title p {
+	color: #c7951f;
+	font-size: 2.5rem;
+	border-bottom: solid #c7951f 2px;
+	border-width: 100%;
+}
+
+.address {
+    border-top: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+.contact2,
+.address {
+	width: 1150px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	line-height: 25px;
+	padding: 30px;
+}
+
+.contact-form {
+	max-width: 360px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type='text'],
+select,
+textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type='submit'] {
+	background-color: #161616;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type='submit']:hover {
+	background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+
+.mapouter {
+	position: relative;
+	text-align: right;
+	height: 400px;
+	width: 400px;
+}
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 400px;
+	width: 400px;
+}
+
+.contact-details div,
+.address-details div {
+	padding: 10px;
+	width: 300px;
+}
+
+.contact-details h2,
+.address h2 {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.contact-details__team,
+.address-details__address {
+	border-top: solid rgba(0, 0, 0, 0.2) 1px;
+}
