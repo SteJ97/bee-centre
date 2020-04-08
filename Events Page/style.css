@@ -1,5 +1,9 @@
 .desktop-nav_buttons .events {
-	background-color: rgba(0, 0, 0, 0.2);	
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+header {
+	padding-left: 90px !important;
 }
 
 .page-title {
@@ -69,4 +73,10 @@ section div {
 
 .event li {
 	padding: 7px;
+}
+
+@media (max-width: 826px) {
+	.page-title {
+		justify-content: center;
+	}
 }
