@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="../Shared/style.css" />
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 		<link rel="stylesheet" href="../Navbar/style.css" />
+		<link rel="stylesheet" href="../Shared/animate.css" />
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 	<body>
 		<!--Navigation bar-->
@@ -27,7 +29,7 @@
 				</div>
 			</header>
 			<section class="container-row">
-				<div class="education event">
+				<div class="education event" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1200">
 					<h3>
 						<img src="../Images/education.png" alt="Education" />
 						Education Events
@@ -46,7 +48,7 @@
 				</div>
 			</section>
 			<section class="container-row">
-				<div class="talks event">
+				<div class="talks event" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1200">
 					<h3>
 						<img src="../Images/talks.png" alt="talks" />
 						Daily Talks at the Centre
@@ -72,7 +74,7 @@
 				</div>
 			</section>
 			<section class="container-row">
-				<div class="seasonal event">
+				<div class="seasonal event" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1200">
 					<h3>
 						<img src="../Images/calendar.png" alt="calendar" />
 						Seasonal Events
@@ -90,5 +92,11 @@
 			<p>- By Stephen Johnson | 2020</p>
 		</footer>
 		<!-- End of footer -->
+		<!-- Animate on scroll js file -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- Animate on scroll load script -->
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
