@@ -19,7 +19,7 @@
 
 		<script>
 			// Loads navbar html code into navbar placeholder div
-			$(function() {
+			$(function () {
 				$('#nav-placeholder').load('../Navbar/index.html');
 			});
 		</script>
@@ -45,13 +45,13 @@
 								id="subject"
 								name="subject"
 								placeholder="Write something.."
-								style="height:200px"
+								style="height: 200px;"
 							></textarea>
 
 							<input type="submit" value="Submit" required />
 						</form>
 					</div>
-					<div class="contact-details">
+					<div class="contact-details" data-aos="fade-left" data-aos-duration="1200">
 						<div class="contact-details__business">
 							<h2>Contact the business</h2>
 							<p>Contact Number:</p>
@@ -94,7 +94,7 @@
 							><a href="https://www.whatismyip-address.com">what is my ip</a>
 						</div>
 					</div>
-					<div class="address-details">
+					<div class="address-details" data-aos="fade-left" data-aos-duration="1200">
 						<div class="address-details__opentimes">
 							<h2>Opening times:</h2>
 							<p>Monday – Friday (8am – 7pm)<br />Saturday (8am – 5pm)<br />Sunday (12pm - 5pm)</p>
@@ -112,5 +112,16 @@
 				</div>
 			</section>
 		</main>
+		<!-- By Author -->
+		<footer>
+			<p>- By Stephen Johnson | 2020</p>
+		</footer>
+		<!-- End of footer -->
+		<!-- Animate on scroll js file -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- Animate on scroll load script -->
+		<script>
+			AOS.init();
+		</script>
 	</body>
 </html>
