@@ -1,5 +1,9 @@
 .desktop-nav_buttons .contact {
-	background-color: rgba(0, 0, 0, 0.2);	
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+main {
+	overflow: hidden;
 }
 
 .container-row {
@@ -7,7 +11,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	min-height: 430px;	
+	min-height: 430px;
+	font-size: 1.2rem;
 }
 
 .container-column {
@@ -35,18 +40,17 @@
 }
 
 .address {
-    border-top: solid rgba(0, 0, 0, 0.2) 1px;
+	border-top: solid rgba(0, 0, 0, 0.2) 1px;
 }
 
 .contact2,
 .address {
-	width: 1150px;
+	width: 980px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-evenly;
+	justify-content: start;
 	line-height: 25px;
-	padding: 30px;
 }
 
 .contact-form {
@@ -54,6 +58,7 @@
 	border-radius: 5px;
 	background-color: rgba(0, 0, 0, 0.2);
 	padding: 20px;
+	margin: 30px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -92,6 +97,7 @@ input[type='submit']:hover {
 	text-align: right;
 	height: 400px;
 	width: 400px;
+	margin: 30px;
 }
 .gmap_canvas {
 	overflow: hidden;
@@ -103,7 +109,7 @@ input[type='submit']:hover {
 .contact-details div,
 .address-details div {
 	padding: 10px;
-	width: 300px;
+	width: 330px;
 }
 
 .contact-details h2,
@@ -115,4 +121,21 @@ input[type='submit']:hover {
 .contact-details__team,
 .address-details__address {
 	border-top: solid rgba(0, 0, 0, 0.2) 1px;
+}
+
+@media (max-width: 826px) {
+	.contact2,
+	.address {
+		text-align: center;
+		justify-content: center;
+	}
+	.page-title {
+		justify-content: center;
+	}
+	.contact-form,
+	.mapouter,
+	.contact-details,
+	.address-details {
+		margin-bottom: 20px;
+	}
 }
