@@ -1,5 +1,5 @@
 .desktop-nav_buttons .home {
-	background-color: rgba(0, 0, 0, 0.2);	
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 h2,
@@ -21,7 +21,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	min-height: 430px;
+	min-height: 380px;
 	box-shadow: inset 0 0 3px #000000;
 }
 
@@ -64,11 +64,15 @@ main {
 	align-items: center;
 	text-align: center;
 	align-self: center;
-	max-width: 730px;
+	max-width: 950px;
 	font-size: 1.5rem;
 	border-top: solid #ffee00 5px;
 	border-bottom: solid black 5px;
 	padding: 20px;
+}
+
+.introduction-text p {
+	font-size: 1.8rem;	
 }
 
 .special-offer {
@@ -78,7 +82,7 @@ main {
 }
 
 .location {
-	font-size: 2rem;
+	font-size: 1.8rem;
 }
 
 .location-text {
@@ -92,7 +96,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 300px;
+	width: 270px;
 	padding: 15px;
 	margin-bottom: 10px;
 }
@@ -114,8 +118,7 @@ main {
 }
 
 .width {
-	font-size: 2rem;
-	text-align: center;
+	font-size: 1.8rem;	
 	max-width: 1150px;
 	margin: 10px;
 }
@@ -153,12 +156,16 @@ main {
 .fear-text {
 	max-width: 800px;
 	color: #161616;
-	
-	font-size: 2rem;
-	margin-bottom: 10px;
+	font-size: 1.8rem;
+	margin: 5px;
 }
 
-.services ul {
+.services>b {
+	margin-left: 40px;	
+}
+
+.services ul {	
+	font-size: 1.5rem;
 	text-align: start;
 	margin: 0;
 	margin-top: 10px;
@@ -211,9 +218,7 @@ main {
 	display: block;
 }
 
-
-
-@media(max-width: 1166px) {
+@media (max-width: 1166px) {
 	.container-row,
 	.container-column {
 		text-align: center;
