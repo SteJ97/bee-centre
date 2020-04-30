@@ -12,7 +12,6 @@ main {
 	align-items: center;
 	flex-wrap: wrap;
 	min-height: 430px;
-	font-size: 1.2rem;
 }
 
 .container-column {
@@ -22,7 +21,7 @@ main {
 	flex-wrap: wrap;
 	background-color: #161616;
 	color: white;
-	font-size: 1.5rem;
+
 	padding: 10px;
 }
 
@@ -109,13 +108,21 @@ input[type='submit']:hover {
 .contact-details div,
 .address-details div {
 	padding: 10px;
-	width: 330px;
+	width: 330px;	
 }
 
 .contact-details h2,
 .address h2 {
 	margin: 0;
 	margin-bottom: 10px;
+	font-size: 1.8rem;
+}
+
+.contact-details p,
+.address-details p,
+.contact-details a,
+.address-details a  {
+	font-size: 1.5rem;
 }
 
 .contact-details__team,
